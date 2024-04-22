@@ -1,0 +1,48 @@
+Image Loading App
+This is a simple Android application for displaying a grid of images retrieved from a remote API and cached locally for efficient retrieval.
+
+Features
+Display a 3-column square image grid.
+Asynchronous image loading using a remote API.
+Efficient caching mechanism to store images in both memory and disk cache.
+Graceful error handling for network errors and image loading failures.
+Smooth scrolling performance in the image grid.
+Disk caching updates the memory cache accordingly when an image is read from disk.
+Project Structure
+The project follows the MVC (Model-View-Controller) architecture with the following package structure:
+
+data
+remote
+api: Contains API interface definitions.
+base: Base classes for API calling.
+di: Dependency injection modules.
+interceptor: Interceptor classes for API requests.
+repository: Repository and repository implementation classes.
+domain
+model: Contains image model classes.
+presentation
+adapter: Adapter class for the image grid.
+ui: Main activity code for displaying the image grid.
+viewmodel: ViewModel for API calls and data management.
+utils
+constants: Constants such as API parameters and app constants.
+AppUtils: Utility functions for API error handling, image loading, etc.
+Libraries Used
+Retrofit: For making network requests.
+DI (Dependency Injection): For managing dependencies.
+Coroutine: For asynchronous programming.
+Lifecycle ViewModel: For managing UI-related data in a lifecycle-conscious way.
+Setup Instructions
+To run the project, follow these steps:
+
+Clone this repository to your local machine.
+Open the project in Android Studio.
+Build and run the project on an emulator or physical device.
+Usage
+Once the app is running, you should see a grid of images displayed on the main screen. You can scroll through the images and view them in full size by tapping on them.
+
+Contributing
+Contributions are welcome! If you find any issues or have suggestions for improvements, feel free to open an issue or submit a pull request.
+
+License
+This project is licensed under the MIT License - see the LICENSE file for details.
